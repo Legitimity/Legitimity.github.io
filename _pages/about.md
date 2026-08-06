@@ -2,26 +2,46 @@
 layout: about
 title: About
 permalink: /
-subtitle: Undergraduate at <a href="https://eecs.pku.edu.cn/">Peking University</a>.
+subtitle: Undergraduate Student at Peking University
 
 profile:
   align: right
-  image: prof_pic.jpg # 在 assets/img/ 目录下替换成你的正装或专业一点的生活照
-  image_circular: false # 是否圆形头像
+  image: prof_pic.jpg # 请在 assets/img/ 目录下放置你的照片，并在这里替换文件名
+  image_circular: false
 ---
 
-Hi! I am a sophomore majoring in Information and Computing Science at Peking University. I am currently deeply interested in Large Language Models (LLM) research, specifically focusing on pre-training optimization, underlying system efficiency, and model architecture.
+I am an undergraduate student at the School of Electronics Engineering and Computer Science (EECS), [Peking University](https://eecs.pku.edu.cn/), majoring in Information and Computing Science.
 
-Prior to my university studies, I actively participated in competitive programming and had the honor of winning Gold Medals in the National Olympiad in Informatics (NOI) related contests, as well as an ICPC Gold Medal in my freshman year. These experiences endowed me with a solid foundation in algorithm design and a strong passion for C++ and system-level engineering.
+My primary research interests lie in Machine Learning and Large Language Models, with a specific focus on pre-training methodologies, post-training optimization, and efficient model architectures. I am actively seeking research internship opportunities to further explore these areas and contribute to advancing LLM infrastructure. Feel free to reach out via [Email](mailto:legitimity233@gmail.com)!
 
 
+***
 
-#### Selected Projects
-- **nanoGPT Speedrun (Tencent Spark Challenge)** [[GitHub](https://github.com/Legitimity/nanoGPT-tencentspark)]
-  - *Brief description of what you did (e.g., Optimized forward/backward pass, adjusted hyper-parameters for faster convergence).*
-- **Honor Track Implementations**
-  - Formal verification and functional programming derivations (Agda).
+#### 🔬 Research Interests
+- **Efficient AI Systems:** Training Acceleration, Architecture Optimization
+- **Algorithms:** Approximate Algorithms, Advanced Data Structures
 
-#### Education
-- **B.S. in Information and Computing Science**, Peking University (2024 - 2028)
-  - Core Courses: Mathematical Analysis, Advanced Algebra, Practice of Programming (Honor Track), Introduction to Computing (Honor Track).
+#### 🏆 Programming Profiles & Archives
+<div style="display: flex; gap: 10px; margin-bottom: 10px; margin-top: 10px;">
+  <a href="https://codeforces.com/profile/Legitimity" target="_blank">
+    <img src="https://cfrating.baoshuo.dev/rating?username=Legitimity" height="24" alt="Codeforces Legitimity">
+  </a>
+  <a href="https://codeforces.com/profile/Nakuru" target="_blank">
+    <img src="https://cfrating.baoshuo.dev/rating?username=Nakuru" height="24" alt="Codeforces Nakuru">
+  </a>
+  <a href="https://atcoder.jp/users/Legitimity" target="_blank">
+    <img src="https://atrating.baoshuo.dev/rating?username=Legitimity" height="24" alt="AtCoder Legitimity">
+  </a>
+</div>
+
+- **Blog Archive:** [CNBlogs (High School)](https://www.cnblogs.com/tiatto) - *A collection of competitive programming tutorials and problem-solving notes.*
+
+#### 📰 Recent News
+- **[July 2026]** Completed the Tencent Spark Challenge, focusing on nanoGPT speedrun optimization.
+- **[Dec 2025]** Awarded the Gold Medal at the ICPC Asia Nanjing Regional Contest.
+- **[Aug 2024]** Awarded the Silver Medal at the National Olympiad in Informatics (NOI).
+- **[Aug 2023]** Awarded the Gold Medal at the National Olympiad in Informatics (NOI) Summer Camp.
+
+#### 🎓 Education
+- **Peking University** | B.S. in Information and Computing Science | *Sep 2025 - Jun 2029 (Expected)*
+- **Jiangsu Huaiyin High School** | *Graduated Jun 2025*
