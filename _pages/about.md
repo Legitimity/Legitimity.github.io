@@ -45,6 +45,6 @@ My primary research interests lie in Machine Learning and Large Language Models,
 #### 🎓 Education & Selected Coursework
 - **Peking University** | B.S. in Information and Computing Science | *Sep 2025 - Jun 2029 (Expected)*
   - **Honor Track Coursework (Distinct Curriculum):**
-    - **[Practice of Programming in C&C++ (Honor Track)](https://www.shaofengjiang.cn/programming-course/)**: Explored modern approximation and randomized algorithms (Score: 98).
-    - **[Introduction to Computing (A) (Honor Track)](https://zhenjiang888.github.io/FP/2025/)**: Focused on functional programming paradigms (Score: 91).
+    - **[Practice of Programming in C&C++ (Honor Track)](https://www.shaofengjiang.cn/programming-course/)**: Focused on modern approximation and randomized algorithms (Score: 98/100).
+    - **[Introduction to Computing (A) (Honor Track)](https://zhenjiang888.github.io/FP/2025/)**: Focused on functional programming paradigms (Score: 91/100).
 - **Jiangsu Huaiyin High School** | *Graduated Jun 2025*
