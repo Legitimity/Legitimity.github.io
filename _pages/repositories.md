@@ -1,47 +1,35 @@
 ---
 layout: page
-permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+permalink: /repositories/
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
-{% if site.data.repositories.github_users %}
+Here is a curated list of my open-source projects, research implementations, and algorithmic archives. You can find more on my [GitHub Profile](https://github.com/Legitimity).
 
-## GitHub users
+<br>
 
+#### 🌟 Featured: LLM Research & System Optimization
+
+<!-- 这里专门展示你腾讯星火挑战周的硬核项目 -->
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
+  {% include repository/repo.html repository="Legitimity/nanoGPT-tencentspark" %}
 </div>
 
----
+<br>
 
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
+#### 💻 Honor Track Courses
 
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
+<!-- 如果你在 GitHub 上有存放 ICPC/NOI 竞赛代码，或者北大硬核实验班（比如WSPD实现、Agda形式化验证）的代码库，可以把下面几个替换成你真实的仓库名 -->
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
+  {% include repository/repo.html repository="Legitimity/programing-code" %}
 </div>
-{% endif %}
+
+<br>
+
+#### 📈 GitHub Statistics
+<!-- 这个组件会自动生成你 GitHub 账号的代码语言占比和全局活跃度面板，非常有极客感 -->
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% include repository/repo_user.html username="Legitimity" %}
+</div>

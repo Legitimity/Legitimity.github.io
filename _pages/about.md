@@ -42,6 +42,9 @@ My primary research interests lie in Machine Learning and Large Language Models,
 - **[Aug 2024]** Awarded the Silver Medal at the National Olympiad in Informatics (NOI).
 - **[Aug 2023]** Awarded the Gold Medal at the National Olympiad in Informatics (NOI) Summer Camp.
 
-#### 🎓 Education
+#### 🎓 Education & Selected Coursework
 - **Peking University** | B.S. in Information and Computing Science | *Sep 2025 - Jun 2029 (Expected)*
+  - **Honor Track Coursework (Distinct Curriculum):**
+    - **[Practice of Programming in C&C++ (Honor Track)](https://www.shaofengjiang.cn/programming-course/)**[cite: 2]: Explored modern approximation and randomized algorithms. Achieved a score of 98[cite: 2].
+    - **[Introduction to Computing (A) (Honor Track)](https://zhenjiang888.github.io/FP/2025/)**[cite: 2]: Focused on functional programming paradigms. Achieved a score of 91[cite: 2].
 - **Jiangsu Huaiyin High School** | *Graduated Jun 2025*
