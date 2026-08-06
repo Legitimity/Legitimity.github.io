@@ -22,6 +22,41 @@ legitimity233@gmail.com
 
 ------
 
+## ♟️ 项目可视化速览
+
+- <i class="fa-solid fa-database"></i> **数据规模**：98,209 局冠军 Bot 自对弈牌谱
+- <i class="fa-solid fa-shuffle"></i> **在线增强**：12 倍花色/序数对称变换
+- <i class="fa-solid fa-brain"></i> **最终模型**：5.61M 参数 ResNet v2
+- <i class="fa-solid fa-ranking-star"></i> **线上表现**：Botzone 多轮练习赛稳定 Top 5
+
+### 训练流水线（Mermaid）
+
+```mermaid
+flowchart LR
+    A[Raw data.txt] --> B[preprocess.py<br/>FeatureAgent rollout]
+    B --> C[Per-match NPZ]
+    C --> D[Lazy Dataset + LRU Cache]
+    D --> E[MatchBlockSampler<br/>Locality-aware blocks]
+    E --> F[Online 12x Augmentation]
+    F --> G[ResNet v2 Training<br/>AdamW + Cosine/Warmup]
+    G --> H[Masked Action Inference]
+    H --> I[Local Arena & Botzone]
+```
+
+### 关键结构与训练曲线
+
+![Overall Framework](/assets/img/projects/mahjong/Overall_Framework_Mahjong_SL.svg)
+
+![CNN v2 Architecture](/assets/img/projects/mahjong/cnn_model_v2_architecture.svg)
+
+![Training Accuracy](/assets/img/projects/mahjong/training_accuracy_comparison.svg)
+
+![Training Loss](/assets/img/projects/mahjong/training_loss_comparison.svg)
+
+![Stage Accuracy](/assets/img/projects/mahjong/v2_stage_training_accuracy.svg)
+
+![LR Schedule](/assets/img/projects/mahjong/v2_learning_rate_schedule.svg)
+
 ### 0 概述
 
 
