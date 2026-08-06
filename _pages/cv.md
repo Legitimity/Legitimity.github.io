@@ -37,11 +37,11 @@ GitHub: [github.com/Legitimity](https://github.com/Legitimity)
 *B.S. in Information and Computing Science, School of EECS*
 - **Expected:** Jun 2029
 - **Academic Performance (through Spring 2026):** weighted average **91.38/100** across **51** graded credits; overall GPA **3.84/4.00** (P/NP excluded, credit-weighted).
-- **Selected Coursework (with grades):**
-  - *AI & Algorithms:* Fundamentals of Artificial Intelligence (93), Intermediate Algorithms and Applications (93)
-  - *Mathematical Analysis:* I (87), II (90.5)
-  - *Advanced Algebra:* I (87), II (90)
-  - *Honor Tracks:* Practice of Programming in C&C++ (Honor Track, 98), Introduction to Computing A (Honor Track, 91)
+- **Selected Coursework:**
+  - *AI & Algorithms:* Fundamentals of Artificial Intelligence, Intermediate Algorithms and Applications
+  - *Mathematical Analysis:* I, II
+  - *Advanced Algebra:* I, II
+  - *Honor Tracks (with grades):* Practice of Programming in C&C++ (Honor Track, 98), Introduction to Computing A (Honor Track, 91)
 
 ---
 
