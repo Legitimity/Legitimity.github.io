@@ -16,25 +16,13 @@ github: https://github.com/Legitimity/nanoGPT-tencentspark
 - <i class="fa-solid fa-microchip"></i> **工程演进**：QKV → QKVG 融合投影与门控实现
 - <i class="fa-solid fa-trophy"></i> **当前最佳**：E47, full val loss = 3.005883
 
-### 模型结构演变图（简化版，保证可渲染）
+### 模型结构演变图
 
-```mermaid
-flowchart TB
-    A[Baseline 0\nnanoGPT GPT-2 124M] --> B[Baseline 1\nRecipe + Muon]
-    B --> C[Baseline 2\nQK-Norm + Learnable Scale + 1-bank VE]
-    C --> D[Baseline 3\n+ tiny residual init + ReLU² FFN + gated attention]
-    D --> E[Baseline 4\nDense Speedrun + readout backout]
-    E --> F[Best @ E47\nfull val loss = 3.005883]
-```
+<img src="/assets/img/projects/nanogpt/model_evolution.svg" alt="nanoGPT model evolution" style="width: 100%; max-width: 100%; height: auto; object-fit: contain !important; display: block; margin: 0 auto 1rem auto;" />
 
-### 注意力投影工程演进（简化版）
+### 注意力投影工程演进
 
-```mermaid
-flowchart LR
-    P1[Fused QKV] --> P2[Split Wq/Wk/Wv]
-    P2 --> P3[Fused QKV + Gate]
-    P3 --> P4[Fused QKVG]
-```
+<img src="/assets/img/projects/nanogpt/attention_projection_evolution.svg" alt="nanoGPT attention projection evolution" style="width: 100%; max-width: 100%; height: auto; object-fit: contain !important; display: block; margin: 0 auto 1rem auto;" />
 
 # GPT结构迭代技术报告
 

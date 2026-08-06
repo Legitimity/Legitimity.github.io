@@ -4,13 +4,13 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/cv.pdf
+cv_pdf: /assets/pdf/cv_formal.pdf
 description: A detailed overview of my academic background, research projects, and programming achievements.
 toc:
   sidebar: left
 ---
 
-[下载 PDF 版 CV](/assets/pdf/cv.pdf){: .btn .btn-sm .btn-outline-primary }
+[下载 PDF 版 CV](/assets/pdf/cv_formal.pdf){: .btn .btn-sm .btn-outline-primary }
 
 ## Contact
 
@@ -36,9 +36,12 @@ GitHub: [github.com/Legitimity](https://github.com/Legitimity)
 **Peking University**
 *B.S. in Information and Computing Science, School of EECS*
 - **Expected:** Jun 2029
-- **Core Coursework:**
-  - *Mathematics & AI:* Fundamentals of Artificial Intelligence, Mathematical Analysis (I&II), Advanced Algebra (I&II), Intermediate Algorithms and Applications
-  - *Honor Tracks:* Practice of Programming in C&C++, Introduction to Computing A
+- **Academic Performance (through Spring 2026):** weighted average **91.38/100** across **51** graded credits; overall GPA **3.84/4.00** (P/NP excluded, credit-weighted).
+- **Selected Coursework (with grades):**
+  - *AI & Algorithms:* Fundamentals of Artificial Intelligence (93), Intermediate Algorithms and Applications (93)
+  - *Mathematical Analysis:* I (87), II (90.5)
+  - *Advanced Algebra:* I (87), II (90)
+  - *Honor Tracks:* Practice of Programming in C&C++ (Honor Track, 98), Introduction to Computing A (Honor Track, 91)
 
 ---
 
