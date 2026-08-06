@@ -12,6 +12,25 @@ toc:
 
 [下载 PDF 版 CV](/assets/pdf/cv.pdf){: .btn .btn-sm .btn-outline-primary }
 
+## Contact
+
+**Ruize Chen**  
+Undergraduate Student, School of EECS, Peking University  
+Email: [legitimity233@gmail.com](mailto:legitimity233@gmail.com)  
+Website: [legitimity.github.io](https://legitimity.github.io)  
+GitHub: [github.com/Legitimity](https://github.com/Legitimity)
+
+## Research Interests
+
+- Efficient AI Systems: Training acceleration and architecture optimization.
+- Machine Learning & LLMs: Pre-training methodologies and post-training optimization.
+- Algorithms: Approximate algorithms and advanced data structures.
+
+## Programming Profiles
+
+- Codeforces: [Legitimity](https://codeforces.com/profile/Legitimity), [Nakuru](https://codeforces.com/profile/Nakuru)
+- AtCoder: [Legitimity](https://atcoder.jp/users/Legitimity)
+
 ## Education
 
 **Peking University**

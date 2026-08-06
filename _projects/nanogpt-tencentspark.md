@@ -16,65 +16,24 @@ github: https://github.com/Legitimity/nanoGPT-tencentspark
 - <i class="fa-solid fa-microchip"></i> **工程演进**：QKV → QKVG 融合投影与门控实现
 - <i class="fa-solid fa-trophy"></i> **当前最佳**：E47, full val loss = 3.005883
 
-### 模型结构演变图（Mermaid）
+### 模型结构演变图（简化版，保证可渲染）
+
+```mermaid
+flowchart TB
+    A[Baseline 0\nnanoGPT GPT-2 124M] --> B[Baseline 1\nRecipe + Muon]
+    B --> C[Baseline 2\nQK-Norm + Learnable Scale + 1-bank VE]
+    C --> D[Baseline 3\n+ tiny residual init + ReLU² FFN + gated attention]
+    D --> E[Baseline 4\nDense Speedrun + readout backout]
+    E --> F[Best @ E47\nfull val loss = 3.005883]
+```
+
+### 注意力投影工程演进（简化版）
 
 ```mermaid
 flowchart LR
-    B0["Baseline 0 · E1<br/>nanoGPT GPT-2 124M<br/>Pre-LN + GELU"]
-    R0["E2–E6 · 训练 recipe<br/>LR / WSD / microbatch / Muon"]
-    B1["Baseline 1 · E6<br/>microbatch 6 + Muon"]
-
-    QK0["E7 · 无参 QK-Norm<br/>近似无变化"]
-    QK1["E8 · QK-Norm<br/>+ 每层每头可学习 logit scale<br/>约 -0.02 val loss"]
-    H6["E9 · 12 heads → 6 heads<br/>无明显收益"]
-    VE["E10 · 1-bank Value Embedding<br/>共享词表，仅注入最后 4 层<br/>约 -0.01 val loss"]
-    B2["Baseline 2 · E10<br/>QK-Norm + learned scale + 1-bank VE"]
-
-    RI["E11 · tiny residual init<br/>residual projection std × 0.1<br/>约 -0.01 val loss"]
-    RELU2["E12 · Dense ReLU² FFN<br/>GELU → ReLU(x)²<br/>约 -0.04 val loss"]
-    GATE["E13 · Gated Attention<br/>SDPA 输出后 elementwise sigmoid gate<br/>约 -0.01 val loss"]
-    B3["Baseline 3 · E13<br/>VE + tiny init + ReLU² + gated attention"]
-
-    DS["E20 · Dense 4h Speedrun<br/>full val 3.036966"]
-    RO["E27 · Final readout backout<br/>LN(X12) 与 LN(X8) 按 [1,0] 混合<br/>full val 3.035213"]
-    B4["Baseline 4 · E27<br/>Dense Speedrun + readout backout"]
-
-    HP["E33–E45 · 固定时间调参<br/>momentum 0.90 / accum8 / cosine LR"]
-    WSD["E46–E48 · WSD linear 30% 候选<br/>LR：.00234/.026 → .003/.03 → .0036/.04<br/>full val：3.008401 → 3.005883 → 3.017362<br/>embedding decay 口径不完全一致"]
-    BEST["当前最佳 · E47<br/>LayerNorm + Dense ReLU² + VE + gate + readout<br/>accum8 · AdamW 0.003 · Muon 0.03 · mom 0.90<br/>WSD linear .30 · full val 3.005883"]
-
-    B0 --> R0 --> B1
-    B1 --> QK1 --> VE --> B2
-    B1 -.-> QK0
-    QK1 -.-> H6
-    B2 --> RI --> RELU2 --> GATE --> B3
-    B3 --> DS --> RO --> B4
-    B4 --> HP --> WSD --> BEST
-
-    subgraph ENG["注意力投影工程演进（数学语义保持）"]
-        EQKV["Baseline 1<br/>fused QKV [C,3C]"]
-        ESPLIT["Baseline 2<br/>独立 Wq / Wk / Wv"]
-        EGATE["Baseline 3<br/>fused QKV + 独立 gate"]
-        EQKVG["Speedrun<br/>fused QKVG [C,4C]"]
-        EQKV --> ESPLIT --> EGATE --> EQKVG
-    end
-
-    B1 -.->|实现| EQKV
-    B2 -.->|实现| ESPLIT
-    B3 -.->|实现| EGATE
-    B4 -.->|实现| EQKVG
-
-    classDef base fill:#dbeafe,stroke:#2563eb,color:#172554,stroke-width:2px;
-    classDef positive fill:#dcfce7,stroke:#16a34a,color:#14532d,stroke-width:2px;
-    classDef neutral fill:#fef3c7,stroke:#d97706,color:#78350f,stroke-width:1.5px;
-    classDef engineering fill:#f3f4f6,stroke:#6b7280,color:#111827,stroke-dasharray:5 3;
-    classDef best fill:#ede9fe,stroke:#7c3aed,color:#3b0764,stroke-width:3px;
-
-    class B0,B1,B2,B3,B4 base;
-    class QK1,VE,RI,RELU2,GATE,RO,HP,WSD positive;
-    class QK0,H6 neutral;
-    class EQKV,ESPLIT,EGATE,EQKVG engineering;
-    class BEST best;
+    P1[Fused QKV] --> P2[Split Wq/Wk/Wv]
+    P2 --> P3[Fused QKV + Gate]
+    P3 --> P4[Fused QKVG]
 ```
 
 # GPT结构迭代技术报告

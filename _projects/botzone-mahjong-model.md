@@ -45,9 +45,9 @@ flowchart LR
 
 ### 关键结构与训练曲线
 
-![Overall Framework](/assets/img/projects/mahjong/Overall_Framework_Mahjong_SL.svg)
+<img src="/assets/img/projects/mahjong/Overall_Framework_Mahjong_SL.svg" alt="Overall Framework" style="width: 100%; max-width: 100%; height: auto; object-fit: contain !important; display: block; margin: 0 auto 1rem auto;" />
 
-![CNN v2 Architecture](/assets/img/projects/mahjong/cnn_model_v2_architecture.svg)
+<img src="/assets/img/projects/mahjong/cnn_model_v2_architecture.svg" alt="CNN v2 Architecture" style="width: 100%; max-width: 100%; height: auto; object-fit: contain !important; display: block; margin: 0 auto 1rem auto;" />
 
 ![Training Accuracy](/assets/img/projects/mahjong/training_accuracy_comparison.svg)
 
